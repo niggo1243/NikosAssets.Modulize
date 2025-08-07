@@ -1,0 +1,12 @@
+{
+  "name": "com.nikosassets.modulize",
+  "displayName": "NikosAssets.Modulize",
+  "version": "0.1.0",
+  "unity": "2022.3",
+  "keywords": [],
+  "samples": [],
+  "author": {
+    "name": "Nikodem Grzonkowski"
+  },
+  "description": "Sometimes you want or rather need your components to always execute in the right order within the \nUnity function execution order (Awake, Start, Update, etc.).\nThis package offers a solution where you can create and order your own modules (MonoBehaviours)."
+}
