@@ -32,7 +32,7 @@ The original NaughtyAttributes package works as well though and if you already h
 Add the following lines to the "dependencies" section to include this package and my helpers package dependency (scopedRegistries automatic dependency resolve setup is in progress!):
 ```
 "com.nikosassets.helpers": "https://github.com/niggo1243/Unity3DHelperTools.git#upm"
-"com.nikosassets.modulize": "TBA"
+"com.nikosassets.modulize": "https://github.com/niggo1243/NikosAssets.Modulize.git"
 ```
 
 For my NaughtyAttributes performance improvements fork:
