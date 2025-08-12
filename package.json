@@ -8,5 +8,6 @@
   "author": {
     "name": "Nikodem Grzonkowski"
   },
-  "description": "Sometimes you want or rather need your components to always execute in the right order within the \nUnity function execution order (Awake, Start, Update, etc.).\nThis package offers a solution where you can create and order your own modules (MonoBehaviours)."
+  "description": "Sometimes you want or rather need your components to always execute in the right order within the \nUnity function execution order (Awake, Start, Update, etc.).\nThis package offers a solution where you can create and order your own modules (MonoBehaviours).",
+  "documentationUrl": "https://github.com/niggo1243/NikosAssets.Modulize"
 }

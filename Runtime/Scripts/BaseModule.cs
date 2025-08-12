@@ -3,6 +3,9 @@ using NikosAssets.Helpers;
 
 namespace NikosAssets.Modulize
 {
+    /// <summary>
+    /// The base template to inherit from
+    /// </summary>
     public abstract class BaseModule : BaseNotesMono
     {
         [Flags]
@@ -13,23 +16,48 @@ namespace NikosAssets.Modulize
             LateUpdate = 4,
         }
         
+        /// <summary>
+        /// Your (optional) Awake logic 
+        /// </summary>
         public abstract void AwakeInit();
+        
+        /// <summary>
+        /// Your (optional) Start logic
+        /// </summary>
         public abstract void StartInit();
+        
+        /// <summary>
+        /// Your (optional) OnDestroy logic
+        /// </summary>
         public abstract void Destroy();
+        
+        /// <summary>
+        /// Your (optional) OnEnable logic
+        /// </summary>
         public abstract void Enable();
+        
+        /// <summary>
+        /// Your (optional) OnDisable logic
+        /// </summary>
         public abstract void Disable();
 
-        public void RemoveFromCompositeModule <TCompositeModule, TModule>(TCompositeModule compositeModule, UpdateType updateType)
-            where TModule : BaseModule
-            where TCompositeModule : BaseCompositeModule<TModule>
-        {
-            compositeModule.RemoveModule((TModule) this, updateType);
-        }
         
+        /// <summary>
+        /// Your (optional) Update logic
+        /// </summary>
+        /// <param name="deltaTime"></param>
         public abstract void UpdateTick(float deltaTime);
         
+        /// <summary>
+        /// Your (optional) FixedUpdate logic
+        /// </summary>
+        /// <param name="deltaTime"></param>
         public abstract void FixedTick(float deltaTime);
         
+        /// <summary>
+        /// Your (optional) LateUpdate logic
+        /// </summary>
+        /// <param name="deltaTime"></param>
         public abstract void LateTick(float deltaTime);
     }
 }

@@ -15,7 +15,7 @@ Since I am developing and maintaining this asset package in my spare time, feel 
 
 ## Documentation
 
-See the API doc [TBA]
+See the API doc [here](http://api.niko-creates.tech/modulize/annotated.html)
 
 ## Setup
 
